@@ -33,15 +33,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        初めまして！私はWebエンジニアを目指している大学生です！
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Atomu Ishida
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>静岡県立大学 経営情報学部 経営情報学科所属</p>
         </Box>
         <Box
           flexShrink={0}
@@ -60,7 +60,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/atomu.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
@@ -72,24 +72,21 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Study
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
+          私は静岡県立大学の経営情報学部に所属し、経営学や経済学、情報について学んでいます。
+          また、研究室は六井研究室に所属し機械学習を用いたデータ分析を研究しています。
+          大学1年生からプログラミングの勉強を初め、オンラインプログラミングスクールに通い、HTML/CSSやJavaScriptなどのWebサイト制作について学びました。
+          ２年生からは現役のエンジニアの方にメンターをしていただきRailsを用いたWEBアプリ開発を学びました。
+          ２年生の12月から現在(2022年5月)までWebエンジニアとしてインターンをしており、フロントとサーバーの両方の開発に携わっています。
+          フロントではVueやTypeScript、サーバーはRailsを使っています。
+          夏には株式会社CARTA
+          HOLDINGSのTreasureというサマーインターンに参加します。
           <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
+            <Link>「CHONPS」</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+          はインターン先で開発している、日本初、食事の「質」に注目したパーソナル生活習慣指導サービスです。
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -105,39 +102,21 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2001</BioYear>
+          愛知県名古屋市生まれ
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>2024</BioYear>
+          静岡県立大学 経営情報学部 経営情報学科 (卒業予定)
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          好きなこと
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          サッカー、筋トレ、ギター、最新技術のキャッチアップ
         </Paragraph>
       </Section>
 
@@ -147,17 +126,17 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/Atomu-Ishida" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @github
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://twitter.com/inkdrop_app" target="_blank">
               <Button
                 variant="ghost"
@@ -167,12 +146,12 @@ const Home = () => (
                 @inkdrop_app (English)
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
         <Box align="center" my={4}>
           <NextLink href="/posts" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
+              投稿記事
             </Button>
           </NextLink>
         </Box>
