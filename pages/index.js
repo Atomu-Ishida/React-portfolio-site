@@ -17,7 +17,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-// import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
@@ -128,7 +128,7 @@ const Home = () => (
         </BioSection>
       </Section>
 
-      {/* <Section delay={0.3}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
@@ -143,9 +143,9 @@ const Home = () => (
           </Link>
           , Leica, Machine Learning
         </Paragraph>
-      </Section> */}
+      </Section>
 
-      {/* <Section delay={0.3}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           On the web
         </Heading>
@@ -161,40 +161,8 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-        </List> */}
+        </List>
+      </Section>
 
       {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
