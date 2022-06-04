@@ -3,6 +3,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbCHONPS from '../public/images/works/CHONPS.png'
+import thumbAmazonClone from '../public/images/works/Amazon clone.png'
+import thumbBottomNews from '../public/images/works/BottomNews.png'
 
 const Works = () => (
   <Container>
@@ -14,6 +16,30 @@ const Works = () => (
       <Section>
         <WorkGridItem id="CHONPS" title="CHONPS" thumbnail={thumbCHONPS}>
           インターン先で開発しているサービス
+        </WorkGridItem>
+      </Section>
+    </SimpleGrid>
+
+    <SimpleGrid gap={6}>
+      <Section>
+        <WorkGridItem
+          id="AmazonClone"
+          title="Amazonクローン"
+          thumbnail={thumbAmazonClone}
+        >
+          Amazon Clone App
+        </WorkGridItem>
+      </Section>
+    </SimpleGrid>
+
+    <SimpleGrid gap={6}>
+      <Section>
+        <WorkGridItem
+          id="BottomNews"
+          title="BottomNewsApp"
+          thumbnail={thumbBottomNews}
+        >
+          Bottom News App
         </WorkGridItem>
       </Section>
     </SimpleGrid>
