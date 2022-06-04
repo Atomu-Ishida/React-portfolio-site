@@ -5,6 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbCHONPS from '../public/images/works/CHONPS.png'
 import thumbAmazonClone from '../public/images/works/Amazon clone.png'
 import thumbBottomNews from '../public/images/works/BottomNews.png'
+import thumbRaclass from '../public/images/works/Raclass.png'
 
 const Works = () => (
   <Container>
@@ -39,6 +40,14 @@ const Works = () => (
           title="BottomNewsApp"
           thumbnail={thumbBottomNews}
         >
+          Bottom News App
+        </WorkGridItem>
+      </Section>
+    </SimpleGrid>
+
+    <SimpleGrid gap={6}>
+      <Section>
+        <WorkGridItem id="Raclass" title="らくラス" thumbnail={thumbRaclass}>
           Bottom News App
         </WorkGridItem>
       </Section>
